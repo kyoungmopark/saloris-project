@@ -429,6 +429,15 @@ def draw_structure(im0, process_id,total_car_count):
                 lineType)
             cv2.putText(im0, 'TOTAL CAR: ' + str(total_car_count.value), (10, 90), cv2.FONT_HERSHEY_SIMPLEX, 3, (255,255,255), 2)
             
+            #오버랩 구간 그리기
+            process0_overlap_width = int(im0.shape[1]*1/2)
+            process0_overlap_height = int(im0.shape[0]*1/3)
+            process0_overlap_top_left = (0, im0.shape[0] - process0_overlap_height)
+            process0_overlap_top_right = (process0_overlap_width, im0.shape[0] - process0_overlap_height)
+            process0_overlap_bottom_right = (process0_overlap_width, im0.shape[0])
+            cv2.line(im0, process0_overlap_top_left, process0_overlap_top_right, (0,0,255), 2) 
+            cv2.line(im0, process0_overlap_top_right, process0_overlap_bottom_right, (0,0,255), 2)
+            
         elif process_id == 1:
             #주차 공간 그리기
             parkinglot_width = int(im0.shape[1]*3/20)
@@ -441,6 +450,24 @@ def draw_structure(im0, process_id,total_car_count):
             cv2.line(im0, top_right, bottom_right, (0,255,0), 2) 
             cv2.line(im0, bottom_left, bottom_right, (0,255,0), 2) 
             cv2.putText(im0, 'TOTAL CAR: ' + str(total_car_count.value), (10, 90), cv2.FONT_HERSHEY_SIMPLEX, 3, (255,255,255), 2)
+
+            #오버랩 구간 그리기
+            process1_overlap_width = int(im0.shape[1]*1/2)
+            process1_overlap_height = int(im0.shape[0]*1/3)
+            process1_overlap_top_left = (0, im0.shape[0] - process1_overlap_height)
+            process1_overlap_top_right = (process1_overlap_width, im0.shape[0] - process1_overlap_height)
+            process1_overlap_bottom_right = (process1_overlap_width, im0.shape[0])
+            cv2.line(im0, process1_overlap_top_left, process1_overlap_top_right, (0,0,255), 2) 
+            cv2.line(im0, process1_overlap_top_right, process1_overlap_bottom_right, (0,0,255), 2)
+
+            #오버랩 구간 그리기2
+            process1_overlap_width_2 = int(im0.shape[1]*1/2)
+            process1_overlap_height_2 = int(im0.shape[0]*1/3)
+            process1_overlap_bottom_left_2 = (0,  process1_overlap_height_2)
+            process1_overlap_bottom_right_2 = (process1_overlap_width_2, process1_overlap_height_2)
+            process1_overlap_top_right_2 = (process1_overlap_width_2, 0)
+            cv2.line(im0, process1_overlap_bottom_left_2, process1_overlap_bottom_right_2, (0,0,255), 2) 
+            cv2.line(im0, process1_overlap_bottom_right_2, process1_overlap_top_right_2, (0,0,255), 2)
 
         elif process_id == 2:
              #주차 공간 그리기
@@ -455,6 +482,14 @@ def draw_structure(im0, process_id,total_car_count):
             cv2.line(im0, bottom_left, bottom_right, (0,255,0), 2) 
             cv2.putText(im0, 'TOTAL CAR: ' + str(total_car_count.value), (10, 90), cv2.FONT_HERSHEY_SIMPLEX, 3, (255,255,255), 2)
 
+            #오버랩 구간 그리기2
+            process3_overlap_width_2 = int(im0.shape[1]*1/2)
+            process3_overlap_height_2 = int(im0.shape[0]*1/3)
+            process3_overlap_bottom_left_2 = (0,  process3_overlap_height_2)
+            process3_overlap_bottom_right_2 = (process3_overlap_width_2, process3_overlap_height_2)
+            process3_overlap_top_right_2 = (process3_overlap_width_2, 0)
+            cv2.line(im0, process3_overlap_bottom_left_2, process3_overlap_bottom_right_2, (0,0,255), 2) 
+            cv2.line(im0, process3_overlap_bottom_right_2, process3_overlap_top_right_2, (0,0,255), 2)
             
            
 
