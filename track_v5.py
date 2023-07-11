@@ -94,7 +94,7 @@ def run(
         process_id=0,
         total_car_count=0,
 ):
-    process = psutil.Process(os.getpid())
+    process = psutil.Process(os.getpid()) 
     print(f"\n\n\n\nMemory usage: {process.memory_info().rss / 1024 ** 2}MB")
     source = str(source)
     save_img = not nosave and not source.endswith('.txt')  # save inference images
