@@ -1,0 +1,4 @@
+python main.py --image images/result.jpg --data data/result.yml --video rtsp://admin:saloris123!@192.168.0.114/profile2/media.smp rtsp://admin:saloris123!@192.168.0.106/profile2/media.smp rtsp://admin:saloris123!@192.168.0.121/profile2/media.smp rtsp://admin:saloris123!@192.168.0.107/profile2/media.smp --start-frame 1
+
+python main.py --image images/f1.jpg --data data/f1.yml --video rtsp://admin:saloris123!@192.168.0.114/profile2/media.smp rtsp://admin:saloris123!@192.168.0.106/profile2/media.smp rtsp://admin:saloris123!@192.168.0.121/profile2/media.smp rtsp://admin:saloris123!@192.168.0.107/profile2/media.smp --start-frame 1
+python main.py --image images/f2.jpg --data data/f2.yml --video rtsp://admin:saloris123!@192.168.0.114/profile2/media.smp rtsp://admin:saloris123!@192.168.0.106/profile2/media.smp rtsp://admin:saloris123!@192.168.0.121/profile2/media.smp rtsp://admin:saloris123!@192.168.0.107/profile2/media.smp --start-frame 1

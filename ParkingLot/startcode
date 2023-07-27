@@ -2,3 +2,9 @@ python main.py --image images/parking_lot_1.png --data data/coordinates_1.yml --
 python main.py --image images/parking_lot_2.png --data data/coordinates_2.yml --video videos/parking_lot_2.mp4 --start-frame 400
 python main.py --data data/coordinates_1.yml --video videos/parking_lot_1.mp4 --start-frame 400
 python main.py --data data/coordinates_2.yml --video videos/parking_lot_2.mp4 --start-frame 400
+rtsp://admin:saloris123!@192.168.0.121/profile2/media.smp
+python main.py --image images/f1.jpg --data data/f1.yml --video rtsp://admin:saloris123!@192.168.0.121/profile2/media.smp --start-frame 1
+python main.py --data data/f1.yml data/f3.yml --video rtsp://admin:saloris123!@192.168.0.121/profile2/media.smp rtsp://admin:saloris123!@192.168.0.114/profile2/media.smp --start-frame 1
+python main.py --image images/result.jpg --data data/result.yml --video rtsp://admin:saloris123!@192.168.0.121/profile2/media.smp rtsp://admin:saloris123!@192.168.0.114/profile2/media.smp rtsp://admin:saloris123!@192.168.0.106/profile2/media.smp --start-frame 1
+python main.py --data data/result.yml --video rtsp://admin:saloris123!@192.168.0.121/profile2/media.smp rtsp://admin:saloris123!@192.168.0.114/profile2/media.smp rtsp://admin:saloris123!@192.168.0.106/profile2/media.smp --start-frame 1
+python object_tracker.py --video rtsp://admin:saloris123!@192.168.0.121/profile2/media.smp --model yolov4
