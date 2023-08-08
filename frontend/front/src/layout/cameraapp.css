@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .add-camera-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .add-camera-container input {
+    margin-right: 10px;
+  }
+  
+  .camera-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .camera-view {
+    position: relative;
+    width: 640px; /* iframe과 canvas의 너비 */
+    height: 480px; /* iframe과 canvas의 높이 */
+  }
+  
+  #camera-iframe, #overlay-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #coord {
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+  }
