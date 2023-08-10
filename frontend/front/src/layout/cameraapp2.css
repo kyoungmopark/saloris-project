@@ -1,0 +1,5 @@
+.camera-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3개의 칼럼으로 나눕니다 */
+    gap: 20px; /* 각 카메라 뷰 사이의 간격 */
+}
