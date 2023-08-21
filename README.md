@@ -1,4 +1,5 @@
 # saloris-project
+![image](https://github.com/kyoungmopark/saloris-project/assets/103628890/04f2eba5-24c5-4f3e-816a-fb5c0db08aab)
 
 Frontend 폴더는 CCTV를 통해 차량을 추적하고있는 영상을 웹 UI로 보여주기 위한 코드입니다. 리액트 프레임워크를 사요하였으며, 6개의 프레임에서 서버로 부터 영상처리결과를 요청하여 
 실시간으로 스트리밍 받게 하였습니다.
