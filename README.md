@@ -117,14 +117,13 @@
 키오스크 앱 시나리오 -클라이언트가 서버로 차량의 정보를 전송한다. (차량 이미지, 차량 번호, 입차 시간) -이용자가 자신의 차량 번호를 검색하고 정산한다. -결제가 완료되면 앱은 차량 데이터를 DB로 전송하고 자신의 저장 공간에서 삭제한다.
 
 키오스크 앱 화면
-
-![image](https://github.com/kyoungmopark/saloris-project/assets/114475881/7c530b48-cce8-468a-8cdf-593e8f20625b)
-
-![image](https://github.com/kyoungmopark/saloris-project/assets/114475881/acebc903-01f3-4d14-a44b-5dae54649d0d)
-
-![image](https://github.com/kyoungmopark/saloris-project/assets/114475881/4e73576e-74e2-4eba-adda-13cbddf6b8c7)
-
-## ![image](https://github.com/kyoungmopark/saloris-project/assets/114475881/9551d92a-0dc7-4c48-b55e-1d1db5710b15)
+<P align="center" width="100%" height="100%">
+  <img src = "https://github.com/kyoungmopark/saloris-project/assets/114475881/7c530b48-cce8-468a-8cdf-593e8f20625b" width="23%" height="450px">
+  <img src = "https://github.com/kyoungmopark/saloris-project/assets/114475881/acebc903-01f3-4d14-a44b-5dae54649d0d" width="23%" height="450px">
+  <img src = "https://github.com/kyoungmopark/saloris-project/assets/114475881/4e73576e-74e2-4eba-adda-13cbddf6b8c7" width="23%" height="450px">
+  <img src = "https://github.com/kyoungmopark/saloris-project/assets/114475881/9551d92a-0dc7-4c48-b55e-1d1db5710b15" width="23%" height="450px">
+</P>
+---
 
 ### TODO
 
